@@ -17,6 +17,7 @@ body {
   background-image: linear-gradient(white 30%, grey);
   font-family: "Lato", sans-serif;
   margin-left: 1rem;
+  padding: 3rem;
 }
 
 img {
@@ -39,6 +40,7 @@ ul {
 
 p {
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 footer {
@@ -118,6 +120,10 @@ form {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.navbar {
+  margin-top: 1rem;
+}
+
 nav {
   margin-top: 0.5rem;
   margin-bottom: 6rem;
@@ -204,6 +210,10 @@ nav {
     flex-direction: column;
   }
 }
+.carousel-item img {
+  width: 30rem;
+}
+
 div.inicio__imagenes {
   width: 90%;
 }
