@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-size: medium;
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        font-size: small;
+    }
+    }
+
+body{
+    background-image: linear-gradient(white 30%, grey);
+    font-family: 'Lato', sans-serif;
+    margin-left: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    color: red;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+.footer__img{
+    width: 2rem;
+    margin: 0.9rem;
+}

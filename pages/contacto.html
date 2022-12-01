@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/WhatsApp Image 2022-10-18 at 18.27.49.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto - Core Sports CDE</title>
+</head>
+<body>
+    <!--header-->
+    <header id="header-flex">
+        <!--nav= etiqueta semantica para menu de nav-->
+        <img src="../img/WhatsApp Image 2022-10-18 at 18.27.49.jpeg" alt="Foto" class="imagen-header">
+        <nav>
+            <ul class="header-flex__lista-navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section>
+        <h1>Contactanos</h1>
+    </section>
+
+    <section>
+        <p>Completa el formlario y nos contactaremos a la brevedad</p>
+
+        <form id="formulario-contacto">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+
+
+                <div>
+                    <label for="nombre-apellido">Nombre y Apellido</label>
+                    <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" required>
+                </div>
+
+
+                <div>
+                        <input type="radio" name="sexo" id="hombre" required>
+                        <label for="hombre">Hombre</label>
+        
+                        <input type="radio" name="sexo" id="mujer" required>
+                        <label for="mujer">Mujer</label>       
+                </div>
+
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" min="1" id="edad" placeholder="Edad" required>
+                </div>
+
+                <div>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="e-mail" placeholder="E-mail" required>
+
+                </div>
+
+                <div>
+                    <label for="horario">Preferencia horaria</label>
+                    <select id="horario" required>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <img src="../img/Instagram.png" alt="instagram" class="footer__img">
+        <img src="../img/Facebook.png" alt="facebook" class="footer__img">
+        <img src="../img/Whatsapp.png" alt="whatsapp" class="footer__img">
+        <p class="footer__parrafo">Sitio desarrollado en el curso de Desarrollo Web de CODERHOUSE</p>
+    </footer>
+
+</body>
+</html>

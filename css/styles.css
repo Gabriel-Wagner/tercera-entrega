@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: medium;
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: small;
+  }
+}
+body {
+  background-image: linear-gradient(white 30%, grey);
+  font-family: "Lato", sans-serif;
+  margin-left: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: red;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+.footer__img {
+  width: 2rem;
+  margin: 0.9rem;
+}
+
+#formulario-contacto fieldset {
+  background-color: rgba(136, 78, 78, 0.1);
+  display: inline;
+  padding: 2rem;
+}
+
+#formulario-contacto legend {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#formulario-contacto div {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card {
+  border: solid 0.2rem rgba(107, 106, 106, 0.3);
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card__parrafo {
+  font-style: italic;
+  color: rgb(255, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.card__img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  row-gap: 2rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 525px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 330px) {
+  #galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+nav {
+  margin-top: 0.5rem;
+  margin-bottom: 6rem;
+}
+
+.header-flex__lista-navegacion {
+  display: flex;
+  gap: 2rem;
+  margin-right: -2rem;
+  margin-top: 2.5rem;
+}
+
+.header-flex__lista-navegacion a {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.header-flex__lista-navegacion li:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*DESKTOP FIRST - MEDIA QUERIES*/
+@media screen and (max-width: 767px) {
+  #header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  .header-flex__lista-navegacion {
+    gap: 1rem;
+  }
+  .header-flex__lista-navegacion a {
+    font-size: 1rem;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header-flex__lista-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body {
+    margin-top: 3rem;
+  }
+}
+#header-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  height: 8rem;
+}
+
+#header-flex img {
+  width: 8rem;
+  margin-left: -2rem;
+  align-items: center;
+  transform: translateY(-5PX);
+}
+
+.historia__parrafo {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.inicio__imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+  .inicio__imagenes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+div.inicio__imagenes {
+  width: 90%;
+}
+
+.inicio__imagenes img {
+  border-radius: 10rem;
+  width: 100%;
+  justify-self: center;
+}
+
+div#body-index {
+  display: grid;
+  grid-template-areas: "header" "parrafoPrincipal" "inicioImagenes" "parrafoSecundario" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+div#parrafo-principal {
+  grid-area: parrafoPrincipal;
+}
+
+div.inicio__imagenes {
+  grid-area: inicioImagenes;
+}
+
+div#parrafo-secundario {
+  grid-area: parrafoSecundario;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 420px) {
+  div#parrafo-secundario {
+    display: flex;
+    flex-direction: column;
+  }
+}
+div#tercer-parrafo {
+  grid-area: tercerParrafo;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

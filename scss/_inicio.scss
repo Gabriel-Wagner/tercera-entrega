@@ -1,0 +1,72 @@
+
+.inicio__imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+    .inicio__imagenes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+div.inicio__imagenes{
+    width: 90%;
+}
+
+.inicio__imagenes img{
+    border-radius: 10rem;
+    width: 100%;
+    justify-self: center;
+}
+
+
+div#body-index{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "parrafoPrincipal"
+    "inicioImagenes"
+    "parrafoSecundario"
+    "footer"
+}
+
+header{
+    grid-area: header;
+}
+
+div#parrafo-principal{
+    grid-area: parrafoPrincipal;
+}
+
+div.inicio__imagenes{
+    grid-area: inicioImagenes;
+}
+
+div#parrafo-secundario{
+    grid-area: parrafoSecundario;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 420px) {
+    div#parrafo-secundario{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+div#tercer-parrafo{
+    grid-area: tercerParrafo;
+}
+
+footer{
+    grid-area: footer;
+}

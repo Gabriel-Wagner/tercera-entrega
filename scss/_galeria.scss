@@ -1,0 +1,49 @@
+
+.card{
+    border: solid 0.2rem rgba(107, 106, 106, 0.3);
+    display:inline-block;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+
+.card__parrafo{
+    font-style:italic;
+    color:rgb(255, 0, 0);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card__img{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+    row-gap: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 525px) {
+    #galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
